@@ -1,0 +1,20 @@
+<library>
+    <book>
+        <id>0</id>
+        <author>Charles Dickens</author>
+        <title>A Tale of Two Cities</title>
+        <isbn>123-456-789</isbn>
+    </book>
+    <book>
+        <id>1</id>
+        <author>J. R. R. Tolkien</author>
+        <title>The Lord of the Rings</title>
+        <isbn>123-456-789</isbn>
+    </book>
+    <book>
+        <id>2</id>
+        <author>Lewis Carroll</author>
+        <title>Alice's Adventures in Wonderland</title>
+        <isbn>123-456-789</isbn>
+    </book>
+</library>

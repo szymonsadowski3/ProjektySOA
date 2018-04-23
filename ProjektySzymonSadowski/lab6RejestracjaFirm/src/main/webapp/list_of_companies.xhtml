@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+</head>
+<f:view>
+    <div class="container mt-4">
+
+        <h1>Companies</h1>
+        <br/>
+
+        <h4>List of companies:</h4>
+
+        <h:panelGroup id="all">
+            <c:forEach var="company" items="#{companiesManager.companies}">
+                <h:outputLabel value="${company}"/>
+                <br/>
+            </c:forEach>
+        </h:panelGroup>
+
+        <h:form>
+            <h3 class="mb-3">Register your company</h3>
+
+            <h:outputLabel for="name" styleClass="d-block">Company name:</h:outputLabel>
+            <h:inputText value="#{companiesManager.name}" id="name" styleClass="form-control"/>
+
+            <h:outputLabel for="address" styleClass="d-block">Company address:</h:outputLabel>
+            <h:inputText value="#{companiesManager.address}" id="address" styleClass="form-control"/>
+
+            <h:outputLabel for="phoneNum" styleClass="d-block">Company phone number:</h:outputLabel>
+            <h:inputText value="#{companiesManager.phoneNum}" id="phoneNum" styleClass="form-control"/>
+
+            <h:commandButton action="#{companiesManager.addCompany(companiesManager.name, companiesManager.address, companiesManager.phoneNum)}" value="Submit" styleClass="mt-3 btn btn-primary"/>
+        </h:form>
+
+    </div>
+</f:view>
+</html>

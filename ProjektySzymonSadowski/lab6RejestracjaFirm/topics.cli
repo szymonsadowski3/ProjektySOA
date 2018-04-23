@@ -1,0 +1,7 @@
+jms-topic add --topic-address=Sport --entries=topic/sport,java:jboss/exported/jms/topic/sport
+jms-topic add --topic-address=Books --entries=topic/books,java:jboss/exported/jms/topic/books
+
+jms-queue add --queue-address=webQueue --entries=queue/webQueue,java:jboss/exported/jms/queue/webQueue
+jms-topic add --topic-address=Companies --entries=topic/companies,java:jboss/exported/jms/topic/companies
+
+jms-queue add --queue-address=extended --entries=queue/extended,java:jboss/exported/jms/queue/extended

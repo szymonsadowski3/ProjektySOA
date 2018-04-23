@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<books>
+    <book>
+        <id>0</id>
+        <author>A Tale of Two Cities</author>
+        <title lang="polski">Tytuł polski</title>
+        <title lang="angielski">Opowieść o dwóch miastach</title>
+        <isbn>123-456-789</isbn>
+    </book>
+    <book>
+        <id>1</id>
+        <author>J. R. R. Tolkien</author>
+        <title lang="polski">Władca Pierścieni</title>
+        <title lang="angielski">The Lord of the Rings</title>
+        <isbn>987-654-321</isbn>
+    </book>
+    <book>
+        <id>2</id>
+        <author>Lewis Carroll</author>
+        <title lang="polski">Alice's Adventures in Wonderland</title>
+        <title lang="angielski">Alice's Adventures in Wonderland</title>
+        <isbn>111-111-111</isbn>
+    </book>
+</books>

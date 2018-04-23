@@ -1,0 +1,2 @@
+jms-topic add --topic-address=Sport --entries=topic/sport,java:jboss/exported/jms/topic/sport
+jms-topic add --topic-address=Books --entries=topic/books,java:jboss/exported/jms/topic/books

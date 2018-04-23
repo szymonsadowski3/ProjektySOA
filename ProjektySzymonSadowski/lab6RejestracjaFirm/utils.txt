@@ -1,0 +1,1 @@
+jms-queue remove-messages --queue-address=webQueue
